@@ -1,0 +1,283 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --main-color: #000;
+    --text: #718096;
+    --body: #fff;
+    --bg1: #FBFBFB;
+    --bg2: #F7FAFC;
+    --icon: #454444;
+    --btn: #2D3748;
+    --font: 'Inter-Bold';
+}
+
+body {
+    background: var(--body);
+    font-family: var(--font);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.header__link {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+
+.header__link:hover {
+    color: var(--main-color);
+}
+
+.icon {
+    color: var(--icon);
+    font-size: 21px;
+    line-height: 15px;
+    width: 20px;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__bottom {
+    background: var(--bg1);
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    max-width: 354px;
+}
+
+.header__text {
+    font-family: 'Inter-Regular';
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--text);
+    max-width: 328px;
+}
+
+.card-least__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    border-radius: 5px;
+}
+
+.left {
+    padding-left: 30px;
+}
+
+.left1 {
+    padding: 20px;
+}
+
+.least__text {
+    max-width: 403px;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.data {
+    color: var(--text);
+}
+
+.more {
+    color: var(--btn);
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_text {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--text);
+}
+
+.what__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg2);
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--text);
+}
+
+.footer__content {
+    padding: 30px 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    border-top: 1px solid #E8E8E8;
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer__text > span {
+    color: #000;
+    font-size: 18px;
+}
+
+.icon {
+    color: #454444;
+    font-size: 25px;
+}
+
+.article__content {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.article__title {
+    font-size: 45px;
+    line-height: 54px;
+    color: #2D3748;
+    font-family: 'Inter-Bold';
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.article__about {
+    display: flex;
+    align-items: center;
+}
+
+.article__txt {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #2D3748;
+    padding-right: 20px;
+}
+
+.clr {
+    border: 1px solid #E8E7E7;
+    margin: 30px 0;
+}
+
+.article__texts {
+    font-size: 16px;
+    line-height: 19px;
+    color: #718096;
+    font-family: 'Inter-Regular';
+    /* max-width: 765px; */
+}
+
+.title2 {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Inter-Bold';
+    padding: 20px 0;
+}
+
+.title3 {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 25px 0;
+    font-weight: bold;
+    font-family: 'Inter-Bold';
+}
+
+.menu-btn {
+    width: 50px;
+    height: 2px;
+    background: #000;
+    position: relative;
+    padding: 0;
+    border: none;
+    border-radius: none;
+}
+
+.menu-btn:focus {
+    box-shadow: none;
+}
+
+.menu-btn::after,
+.menu-btn::before {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: #000;
+    left: 0;
+    top: -10px;
+    transition: 0.5s;
+}
+
+.menu-btn::after {
+    top: 10px;
+}
+
+.menu-btn:not(.collapsed)::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-btn:not(.collapsed)::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-btn:not(.collapsed) {
+    background: transparent;
+}
